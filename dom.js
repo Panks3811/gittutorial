@@ -21,27 +21,30 @@ var header = document.getElementById('main-header');
 //headertitle.innerText = 'good bye';
 //console.log(headertitle.innerText);
 
-
 header.style.borderBottom= 'solid 3px #000';
 
-
 ///  get elements by class name
+//var items = document.getElementsByClassName('list-group-item');
+///console.log(items);
+//items[0].style.fontWeight ='bold';
+//items[1].style.fontWeight ='bold';
+//items[2].style.fontWeight ='bold';
+//items[3].style.fontWeight ='bold';
+//items[2].style.backgroundColor = 'green';
 
-var items = document.getElementsByClassName('list-group-item');
-console.log(items);
+//get elements by tagname
 
+var li = document.getElementsByTagName('li');
+console.log(li);
+console.log(li[1]);
 
-items[0].style.fontWeight ='bold';
-items[1].style.fontWeight ='bold';
-items[2].style.fontWeight ='bold';
-items[3].style.fontWeight ='bold';
+li[0].style.fontWeight ='bold';
+li[1].style.fontWeight ='bold';
+li[2].style.fontWeight ='bold';
+li[3].style.fontWeight ='bold';
+li[2].style.backgroundColor = 'green';
 
-
-items[2].style.backgroundColor = 'green';
-
-
-
-
-
-
-
+for(var i = 0; i <li.length;i++)
+{
+    li[i].style.backgroundColor='#f4f4f4';
+}
